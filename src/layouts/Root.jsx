@@ -19,7 +19,7 @@ const Root = () => {
       <Navber />
 
       {/* Manin News Section */}
-      <div className="mt-16 grid grid-cols-12 gap-3">
+      <div className="mt-16 md:grid grid-cols-12 gap-3">
         {/* Left Navbar */}
         <aside className="col-span-3">
           <LeftNavber />

@@ -10,9 +10,14 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
+        path: "/",
+        element: <DragonNews />, 
+        loader: () => fetch("/news.json")
+      },
+      {
         path: "/category/:id",
         element: <DragonNews />,
-        loader: () => fetch("/news.json") // ✅ শুধু ফাইল লোড করো
+        loader: () => fetch("/news.json")
       }
     ]
   }

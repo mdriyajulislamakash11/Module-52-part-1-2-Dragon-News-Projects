@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../pages/Header";
 import HeadLine from "../components/HeadLine";
 import Navber from "../components/Navber";
-import DragonNew from "../components/DragonNew";
+import LeftNavber from "../components/LeftNavber";
 
 const Root = () => {
   return (
@@ -17,7 +17,21 @@ const Root = () => {
       <Navber />
 
       {/* Manin News Section */}
-      <DragonNew />
+      <div>
+        {/* Left Navbar */}
+        <aside>
+          <LeftNavber />
+        </aside>
+
+        {/* News */}
+        <div></div>
+
+        {/* Right Navber */}
+        <aside>
+
+        </aside>
+
+      </div>
 
     </div>
   );

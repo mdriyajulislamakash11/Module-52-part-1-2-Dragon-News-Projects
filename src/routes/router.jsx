@@ -1,13 +1,12 @@
-
-import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
-import Root from '../layouts/Root';
+import React from "react";
+import { createBrowserRouter } from "react-router-dom";
+import Root from "../layouts/Root";
 
 const router = createBrowserRouter([
-    {
-        path:"/",
-        element: <Root />
-    }
-])
+  {
+    path: "/",
+    element: <Root />,
+  },
+]);
 
 export default router;

@@ -7,7 +7,7 @@ const Navber = () => {
         <div className='flex justify-between items-center mt-12'>
             {/* user name */}
             <div className='bg-base-300'>
-                <h2>hello</h2>
+                <h2></h2>
             </div>
 
             {/* item */}

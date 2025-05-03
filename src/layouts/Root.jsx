@@ -3,6 +3,7 @@ import Header from "../pages/Header";
 import HeadLine from "../components/HeadLine";
 import Navber from "../components/Navber";
 import LeftNavber from "../components/LeftNavber";
+import { Outlet } from "react-router-dom";
 
 const Root = () => {
   return (
@@ -17,22 +18,22 @@ const Root = () => {
       <Navber />
 
       {/* Manin News Section */}
-      <div>
+      <div className="mt-16 grid grid-cols-12 gap-3">
         {/* Left Navbar */}
-        <aside>
+        <aside className="col-span-3">
           <LeftNavber />
         </aside>
 
         {/* News */}
-        <div></div>
+        <div className="col-span-6">
+          <Outlet />
+        </div>
 
         {/* Right Navber */}
-        <aside>
+        <aside className="col-span-3">
 
         </aside>
-
       </div>
-
     </div>
   );
 };

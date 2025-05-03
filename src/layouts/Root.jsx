@@ -4,6 +4,7 @@ import HeadLine from "../components/HeadLine";
 import Navber from "../components/Navber";
 import LeftNavber from "../components/LeftNavber";
 import { Outlet } from "react-router-dom";
+import RigrhNavber from "../components/RigrhNavber";
 
 const Root = () => {
   return (
@@ -31,7 +32,7 @@ const Root = () => {
 
         {/* Right Navber */}
         <aside className="col-span-3">
-
+          <RigrhNavber />
         </aside>
       </div>
     </div>

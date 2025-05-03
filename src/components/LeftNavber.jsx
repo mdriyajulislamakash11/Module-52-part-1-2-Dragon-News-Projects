@@ -10,8 +10,6 @@ const LeftNavber = () => {
       .then((data) => setCategories(data));
   }, []);
 
-  console.log(categories);
-
   return (
     <div>
       <h2 className="text-xl font-semibold">
